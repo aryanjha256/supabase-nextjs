@@ -12,7 +12,7 @@ const Home = () => {
     <div className="container" style={{ padding: '50px 0 100px 0' }}>
       <Head><title>DevOps CA3</title></Head>
       {!session ? (
-        <Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa }} theme="dark" />
+        <Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa }} theme="dark" redirectTo='https://supabase-nextjs-aryanjha256.vercel.app/' />
       ) : (
         <Account session={session} />
       )}
